@@ -114,7 +114,7 @@ class GameWindow < Gosu::Window
     @medium_font= Gosu::Font.new(self, "American Typewriter", 62)
     @score_font = Gosu::Font.new(self, "American Typewriter", 48)
     @small_font = Gosu::Font.new(self, "American Typewriter", 32)
-    @game_menu  = Slide_Menu.new(self, 400, HEIGHT-100, 2, SOFT_GREEN, @games, @score_font, 480, @games.index("Drinks"))
+    @game_menu  = Slide_Menu.new(self, 400, HEIGHT-100, 2, SOFT_GREEN, @games, @score_font, 480, @games.index("Fruits"))
     @game_state = :profile_menu
 
     # @game       = "Superfruits"

@@ -1,0 +1,6 @@
+--- 
+Drinks: 
+- !ruby/struct:Score 
+  points: 350
+  name: Guest
+  date: 2011-05-11
