@@ -1,0 +1,25 @@
+--- 
+- !ruby/object:Profile 
+  games_played: 3
+  high_scores: 
+    Fruits: 1659
+  last_played: 2012-05-03
+  last_score: 1494
+  name: Christian
+  score_sum: 4635
+- !ruby/object:Profile 
+  games_played: 1
+  high_scores: 
+    Fruits: 1646
+  last_played: 2012-05-03
+  last_score: 1646
+  name: Boss
+  score_sum: 1646
+- !ruby/object:Profile 
+  games_played: 0
+  high_scores: {}
+
+  last_played: 2012-05-03
+  last_score: 0
+  name: ""
+  score_sum: 0

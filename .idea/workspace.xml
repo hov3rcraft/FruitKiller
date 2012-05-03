@@ -11,10 +11,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-    <option name="REVERSE_PATCH" value="false" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -24,50 +22,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="25" selection-start="6229" selection-end="6229" vertical-scroll-proportion="4.7458334">
+            <state line="4" column="21" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/profile.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highscores.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/highscores.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_window.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/game_window.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="55" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.70577615">
               <folding>
-                <marker date="1304865114986" expanded="true" signature="0:59" placeholder="..." />
-                <marker date="1304865114986" expanded="true" signature="699:846" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="721:836" placeholder="case ... end" />
-                <marker date="1304865114986" expanded="true" signature="887:964" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="2002:2052" placeholder="..." />
-                <marker date="1304865114986" expanded="true" signature="2069:9945" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="2993:3088" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="3255:3270" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="3293:5757" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="3403:3959" placeholder="case ... end" />
-                <marker date="1304865114986" expanded="true" signature="4171:4213" placeholder="{ ... }" />
-                <marker date="1304865114986" expanded="true" signature="4684:5100" placeholder="if ... end" />
-                <marker date="1304865114986" expanded="true" signature="5390:5495" placeholder="if ... end" />
-                <marker date="1304865114986" expanded="true" signature="5771:5897" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="5822:5846" placeholder="{ ... }" />
-                <marker date="1304865114986" expanded="true" signature="5909:7452" placeholder=" ... end" />
-                <marker date="1304865114986" expanded="true" signature="5951:7446" placeholder="if ... end" />
-                <marker date="1304865114986" expanded="true" signature="6359:6381" placeholder="{ ... }" />
-                <marker date="1304865114986" expanded="true" signature="6728:6734" placeholder="..." />
-                <marker date="1304865114986" expanded="true" signature="7017:7208" placeholder="if ... end" />
-                <marker date="1304865114986" expanded="true" signature="8361:8609" placeholder=" ... end" />
+                <element signature="e#1210#1838#0" expanded="false" />
+                <element signature="e#1842#1926#0" expanded="false" />
+                <element signature="e#1972#2166#0" expanded="false" />
+                <element signature="e#2398#2518#0" expanded="false" />
+                <element signature="e#3310#3946#0" expanded="false" />
+                <element signature="e#3950#4014#0" expanded="false" />
+                <element signature="e#4081#4964#0" expanded="false" />
+                <element signature="e#4968#5172#0" expanded="false" />
+                <element signature="e#5206#5421#0" expanded="false" />
+                <element signature="e#5425#6356#0" expanded="false" />
+                <element signature="e#6402#6789#0" expanded="false" />
+                <element signature="e#6793#6853#0" expanded="false" />
+                <element signature="e#6857#7104#0" expanded="false" />
+                <element signature="e#7177#7430#0" expanded="false" />
+                <element signature="e#7448#7484#0" expanded="false" />
+                <element signature="e#7490#7588#0" expanded="false" />
+                <element signature="e#7594#7686#0" expanded="false" />
+                <element signature="e#7692#8025#0" expanded="false" />
+                <element signature="e#8031#8377#0" expanded="false" />
+                <element signature="e#8383#9506#0" expanded="false" />
+                <element signature="e#9511#9724#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="element.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/element.rb">
+      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="27" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="10" column="33" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/element.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="39" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="gosu_mod.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gosu_mod.rb">
+        <entry file="file://$PROJECT_DIR$/lib/gosu_mod.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="10" selection-start="3344" selection-end="3344" vertical-scroll-proportion="0.0">
+            <state line="155" column="92" selection-start="3950" selection-end="3950" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,9 +119,23 @@
       <list>
         <option value="$PROJECT_DIR$/profiles.yml" />
         <option value="$PROJECT_DIR$/gosu_mod.rb" />
+        <option value="$PROJECT_DIR$/highscores.rb" />
+        <option value="$PROJECT_DIR$/lib/profile.rb" />
+        <option value="$PROJECT_DIR$/lib/single_game.rb" />
+        <option value="$PROJECT_DIR$/lib/highscores.rb" />
+        <option value="$PROJECT_DIR$/lib/gosu_mod.rb" />
+        <option value="$PROJECT_DIR$/lib/element.rb" />
+        <option value="$PROJECT_DIR$/lib/game.rb" />
         <option value="$PROJECT_DIR$/Main.rb" />
+        <option value="$PROJECT_DIR$/lib/game_window.rb" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -115,7 +163,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -134,17 +181,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FruitKiller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FruitKiller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FruitKiller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FruitKiller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Christian\Informatik_Projekte\von Anderen\FruitKiller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Christian\Informatik_Projekte\von Anderen\FruitKiller\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Ruby.Main">
@@ -152,8 +241,8 @@
       <module name="FruitKiller" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="ruby-1.9.2-p180" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
@@ -165,6 +254,32 @@
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
     </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="" />
@@ -178,16 +293,73 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="ANSICON" value="" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
     </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Ruby.Main" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
@@ -213,26 +385,41 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.219323" sideWeight="0.6706827" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13793103" sideWeight="0.78243244" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21756756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -244,7 +431,17 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -273,45 +470,73 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/element.rb">
+    <entry file="file://$PROJECT_DIR$/lib/gosu_mod.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+        <state line="155" column="92" selection-start="3950" selection-end="3950" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gosu_mod.rb">
+    <entry file="file://$PROJECT_DIR$/lib/element.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="10" selection-start="3344" selection-end="3344" vertical-scroll-proportion="0.0">
+        <state line="14" column="39" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="33" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/highscores.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="25" selection-start="6229" selection-end="6229" vertical-scroll-proportion="4.7458334">
+        <state line="4" column="21" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/game_window.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="55" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.70577615">
           <folding>
-            <marker date="1304865114986" expanded="true" signature="0:59" placeholder="..." />
-            <marker date="1304865114986" expanded="true" signature="699:846" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="721:836" placeholder="case ... end" />
-            <marker date="1304865114986" expanded="true" signature="887:964" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="2002:2052" placeholder="..." />
-            <marker date="1304865114986" expanded="true" signature="2069:9945" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="2993:3088" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="3255:3270" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="3293:5757" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="3403:3959" placeholder="case ... end" />
-            <marker date="1304865114986" expanded="true" signature="4171:4213" placeholder="{ ... }" />
-            <marker date="1304865114986" expanded="true" signature="4684:5100" placeholder="if ... end" />
-            <marker date="1304865114986" expanded="true" signature="5390:5495" placeholder="if ... end" />
-            <marker date="1304865114986" expanded="true" signature="5771:5897" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="5822:5846" placeholder="{ ... }" />
-            <marker date="1304865114986" expanded="true" signature="5909:7452" placeholder=" ... end" />
-            <marker date="1304865114986" expanded="true" signature="5951:7446" placeholder="if ... end" />
-            <marker date="1304865114986" expanded="true" signature="6359:6381" placeholder="{ ... }" />
-            <marker date="1304865114986" expanded="true" signature="6728:6734" placeholder="..." />
-            <marker date="1304865114986" expanded="true" signature="7017:7208" placeholder="if ... end" />
-            <marker date="1304865114986" expanded="true" signature="8361:8609" placeholder=" ... end" />
+            <element signature="e#1210#1838#0" expanded="false" />
+            <element signature="e#1842#1926#0" expanded="false" />
+            <element signature="e#1972#2166#0" expanded="false" />
+            <element signature="e#2398#2518#0" expanded="false" />
+            <element signature="e#3310#3946#0" expanded="false" />
+            <element signature="e#3950#4014#0" expanded="false" />
+            <element signature="e#4081#4964#0" expanded="false" />
+            <element signature="e#4968#5172#0" expanded="false" />
+            <element signature="e#5206#5421#0" expanded="false" />
+            <element signature="e#5425#6356#0" expanded="false" />
+            <element signature="e#6402#6789#0" expanded="false" />
+            <element signature="e#6793#6853#0" expanded="false" />
+            <element signature="e#6857#7104#0" expanded="false" />
+            <element signature="e#7177#7430#0" expanded="false" />
+            <element signature="e#7448#7484#0" expanded="false" />
+            <element signature="e#7490#7588#0" expanded="false" />
+            <element signature="e#7594#7686#0" expanded="false" />
+            <element signature="e#7692#8025#0" expanded="false" />
+            <element signature="e#8031#8377#0" expanded="false" />
+            <element signature="e#8383#9506#0" expanded="false" />
+            <element signature="e#9511#9724#0" expanded="false" />
           </folding>
         </state>
       </provider>
