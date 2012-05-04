@@ -1,8 +1,8 @@
 #!/Users/mk/.rvm/bin/ruby-1.9.2-p180@gosu
 # encoding: utf-8
 
-VERSION = "2.0 Build 1"
-DATE    = "2012-05-03"
+VERSION = "2.0 Build 2"
+DATE    = "2012-05-04"
 
 require 'gosu'
 require 'yaml'

@@ -4,20 +4,24 @@ class GameWindow < Gosu::Window
     super(WIDTH, HEIGHT, false)
     self.caption = "Fruit Killer v#{VERSION}"
     Dir.chdir File.join( File.dirname(__FILE__), "..", "media" )
-    @profiles   = YAML.load_file(PROFILES_FILE) rescue []
-    @games      = Dir['*/'].map { |d| d.sub('/', '') }
-    @profile_menu_options = @profiles.empty? ? [] : ["Choose existing profile"]
-    @profile_menu_options << "Create new profile" << "Play as Guest"
+    @profiles         = YAML.load_file(PROFILES_FILE) rescue []
+    @games            = Dir['*/'].map { |d| d.sub('/', '') }
+    @no_profiles      = @profiles.empty?
 
-    @background_image = Gosu::Image.new(self, File.join(MEDIA_PATH, "background2.png"), true)
-    @main_menu  = Gosu::Image.new(self, File.join(MEDIA_PATH, "main_menu.png"), true)
-    @font       = Gosu::Font.new(self, "American Typewriter", 96)
-    @big_font   = Gosu::Font.new(self, "American Typewriter", 128)
-    @medium_font= Gosu::Font.new(self, "American Typewriter", 62)
-    @score_font = Gosu::Font.new(self, "American Typewriter", 48)
-    @small_font = Gosu::Font.new(self, "American Typewriter", 32)
-    @game_menu  = Slide_Menu.new(self, 400, HEIGHT-100, ZOrder::MenuString, SOFT_GREEN, @games, @score_font, 480, @games.index("Fruits"))
-    @game_state = :profile_menu
+    @background_image = Image.new(self, File.join(MEDIA_PATH, "background2.png"), true)
+    @main_menu        = Image.new(self, File.join(MEDIA_PATH, "main_menu.png"), true)
+    @ok_button1       = Img.new(self, File.join(MEDIA_PATH, "ok_button.png"), width/2-57, 270, ZOrder::Menu)
+    @ok_button2       = Img.new(self, File.join(MEDIA_PATH, "ok_button.png"), 520, 100, ZOrder::InputBox)
+    @font             = Font.new(self, "American Typewriter", 96)
+    @big_font         = Font.new(self, "American Typewriter", 128)
+    @medium_font      = Font.new(self, "American Typewriter", 62)
+    @score_font       = Font.new(self, "American Typewriter", 48)
+    @small_font       = Font.new(self, "American Typewriter", 32)
+    @font70           = Font.new(self, "American Typewriter", 70)
+    @font79           = Font.new(self, "American Typewriter", 79)
+    @game_menu        = Slide_Menu.new(self, 400, HEIGHT-100, ZOrder::MenuString, SOFT_GREEN, @games, @score_font, 480, @games.index("Fruits"))
+    @profile_menu     = Slide_Menu.new(self, 400, 170, ZOrder::MenuString, YELLOW, @profiles, @medium_font, 480, 0, "name")
+    @game_state       = :profile_menu
   end
 
 # =============
@@ -62,7 +66,7 @@ class GameWindow < Gosu::Window
 
   def draw_vs_menu
     draw_centered(10, "VS MODE", @font, GREEN, width, 0)
-    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -200)
+    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -195)
     @game_menu.draw
   end
 
@@ -85,43 +89,65 @@ class GameWindow < Gosu::Window
             "HIGH SCORES:"]
     @player.high_scores.each {|k, v| text << "   #{k}: #{v}"}
     text.each_with_index {|t, i| @score_font.draw(t, 45, i*50+120, 1, 1.0, 1.0, YELLOW)}
-    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -200)
+    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -195)
   end
 
 # ================
 # = Profile Menu =
 # ================
   def button_down_profile_menu(id, x, y)
-    case find_name(@profile_menu_options, x, y)
-    when "Choose existing profile"
-      @game_state = :choose_profile
-    when "Create new profile"
-      @text_input = Input_Box.new(self, 12, 75, ZOrder::InputBox, ZOrder::InputBoxString, 450, 50, 43)
-      @text_input.activate
-      @ok_button = Img.new(self, "ok_button.png", 480, 75, ZOrder::InputBox)
-      @message = "Please enter the name of the new profile:"
-      @game_state = :create_profile
-    when "Play as Guest"
+    if @no_profiles
+      start_y = 200
+    else
+      @profile_menu.update
+      if @ok_button1.mouse_inside? and id == MsLeft
+        @player = @profile_menu.akt_element
+        puts "User chose player #{@player.name}"
+        @game_state = :main_menu
+      end
+      start_y = 475
+      text_width = @medium_font.text_width("Delete profiles")
+      if x > (width - text_width)/2 and x < (width + text_width)/2 and y > 625 and y < 700
+        @game_state = :delete_profiles
+        return nil
+      end
+    end
+    text_width = @medium_font.text_width("Play as Guest")
+    text_width2 = @medium_font.text_width("Create new profile")
+    if x > (width - text_width)/2 and x < (width + text_width)/2 and y > (start_y+75) and y < (start_y + 150)
       @player = Profile.new("Guest")
       puts "User chose Guest Profile"
       @game_state = :main_menu
+    elsif x > (width - text_width2)/2 and x < (width + text_width2)/2 and y > start_y
+      @text_input = Input_Box.new(self, 52, 100, ZOrder::InputBox, ZOrder::InputBoxString, 450, 50, 43)
+      @text_input.activate
+      @message = "Please enter the name of the new profile:"
+      @game_state = :create_profile
     end
   end
 
   def draw_profile_menu
-    draw_menu(@profile_menu_options)
+    draw_centered(10, "Choose your profile", @font, YELLOW, width, 0)
+    if @no_profiles
+      draw_menu(200, ["Create new profile", "Play as Guest"])
+    else
+      @profile_menu.draw
+      @ok_button1.draw
+      draw_centered(360, "--------- OR ---------", @font79, YELLOW, width, 0)
+      draw_menu(475, ["Create new profile", "Play as Guest", "Delete profiles"])
+    end
   end
 
 # ==================
 # = Create Profile =
 # ==================
   def button_down_create_profile(id, x, y)
-    if (@ok_button.mouse_inside? and id == MsLeft) or id == KbReturn
+    if (@ok_button2.mouse_inside? and id == MsLeft) or id == KbReturn
       name_included = false
       @profiles.each do |p|
         name_included = true if p.name == @text_input.text
       end
-      name_included = true if @text_input.text == "Guest"
+      name_included = true if @text_input.text.upcase == "GUEST" or @text_input.text == ""
       if name_included
         @message = "'#{@text_input.text}' ist not available. Please try again."
         @text_input.text = ""
@@ -133,18 +159,55 @@ class GameWindow < Gosu::Window
         save_profiles
         puts "Profile '#{@player.name}' was created"
         @text_input.deactivate
+        @no_profiles = false
+        @profile_menu.update_options(@profiles, 0, "name")
         @game_state = :main_menu
       end
-    elsif id == MsLeft and y > HEIGHT-100
+    elsif id == MsLeft and y > HEIGHT-100 and x < 200
       @game_state = :profile_menu
     end
   end
 
   def draw_create_profile
-    @score_font.draw(@message, 10, 10, 1, 1.0, 1.0, YELLOW)
+    @score_font.draw(@message, 50, 35, ZOrder::MenuString, 1.0, 1.0, YELLOW)
     @text_input.draw
-    @ok_button.draw
-    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -200)
+    @ok_button2.draw
+    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -195)
+  end
+
+# ===================
+# = Delete Profiles =
+# ===================
+  def button_down_delete_profiles(id, x, y)
+    @profile_menu.update
+    text_width = @score_font.text_width("Delete all profiles and highscores")
+    if @ok_button1.mouse_inside? and id == MsLeft
+      name = @profile_menu.akt_element.name
+      @profiles.delete(@profile_menu.akt_element)
+      save_profiles
+      puts "Profile '#{name}' has been deleted."
+      @no_profiles = @profiles.empty?
+      @profile_menu.update_options(@profiles, 0, "name")
+      @game_state = :profile_menu
+    elsif x > (width - text_width)/2 and x < (width + text_width)/2 and y > 450 and y < 500 and id == MsLeft
+      @profiles = []
+      @no_profiles = true
+      @profile_menu.update_options(@profiles, 0, "name")
+      File.delete(PROFILES_FILE, SCORES_FILE)
+      puts "THE PROFILES FILE AND THE SCORE FILE HAVE BEEN DELETED."
+      @game_state = :profile_menu
+    elsif id == MsLeft and y > HEIGHT-100 and x < 200
+      @game_state = :profile_menu
+    end
+  end
+
+  def draw_delete_profiles
+    draw_centered(20, "Please choose the profile to delete:", @font70, YELLOW, width, 0)
+    @profile_menu.draw
+    @ok_button1.draw
+    text = "Delete all profiles and highscores"
+    @score_font.draw(text, (width - @score_font.text_width(text))/2, 450, ZOrder::MenuString, 1.0, 1.0, YELLOW)
+    draw_centered(HEIGHT-70, "BACK", @medium_font, ORANGE, width/2, -195)
   end
 
 # =======
@@ -191,11 +254,8 @@ class GameWindow < Gosu::Window
 # ===========
   def button_down(id)
     x = mouse_x; y = mouse_y
-    if id == Gosu::KbQ
+    if id == KbQ
       close
-    elsif @game_state == :choose_profile and @player = find_name(@profiles, x, y)
-			puts "User chose player #{@player.name}"
-      @game_state = :main_menu
     elsif @game_state == :running
       @game.button_down(id, x, y)
     else
@@ -209,9 +269,7 @@ class GameWindow < Gosu::Window
 
   def draw
     @background_image.draw(0, 0, ZOrder::Background)
-    if @game_state == :choose_profile
-      draw_menu(@profiles, "name")
-    elsif @game_state == :running
+    if @game_state == :running
       @game.draw
     else
       send("draw_" + @game_state.to_s)
@@ -250,16 +308,16 @@ class GameWindow < Gosu::Window
       font.draw( string, font_x, y, 1, factor_x, factor_y, color )
     end
 
-    def draw_menu(items, method = nil)
+    def draw_menu(start_y, items, method = nil)
       if method
         ary = items
         items = []
         ary.each{|e| items << e.send(method)}
       end
       items.each_with_index do |name, index|
-				x = 100 + (index / 12) * (WIDTH/3)
-				y = (index % 12) * 58
-        @font.draw(name, x, y, ZOrder::MenuString, 1.0, 1.0, 0xffffff00)
+				x = (width - @medium_font.text_width(name))/2
+				y = start_y + index * 75
+        @medium_font.draw(name, x, y, ZOrder::MenuString, 1.0, 1.0, YELLOW)
       end
     end
 
@@ -284,12 +342,4 @@ class GameWindow < Gosu::Window
         @score_font.draw( score.date.strftime("%d.%m.%y"), x3,  y, z, 1.0, 1.0, color)
       end
     end
-
-  	def find_name(items, x, y)
-  		spalte = ((x - 100.0) / WIDTH * 3).to_i
-  		zeile  = ((y -  20.0) / 58.0).to_i
-      # puts "#{x}/#{y} => #{spalte}/#{zeile}"
-  		index  = spalte * 12 + zeile
-  		items[index]
-  	end
 end

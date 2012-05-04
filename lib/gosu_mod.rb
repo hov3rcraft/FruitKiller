@@ -3,7 +3,7 @@
 # Eine Sammlung nützlicher Klassen, die das Programmieren mit Gosu vereinfachen soll.
 #
 # Erstellt von Christian Hovestadt
-# Version vom 24.3.2012
+# Version vom 4.5.2012
 
 class Background
   def initialize(window, path)
@@ -168,9 +168,10 @@ class Gosu::Font
 end
 
 class Slide_Menu
-  def initialize(window, x, y, z, c, options, font, width, start_index = 0)
+  def initialize(window, x, y, z, c, options, font, width, start_index = 0, method = nil)
     @window = window
     @options = options
+    @output_options = ((method)? @options.map{|e| e.send(method)} : @options )
     @font = font
     @width = width
     @akt_index = start_index
@@ -178,6 +179,16 @@ class Slide_Menu
     side_length = @font.height; height = Math.sqrt(side_length**2 + (side_length/2)**2)
     @t1 = [@x+height, @y, @c, @x+height, @y+side_length, @c, @x, @y+side_length/2, @c, @z]
     @t2 = [@x+@width, @y+side_length/2, @c, @x+@width-height, @y, @c, @x+@width-height, @y+side_length, @c, @z]
+  end
+
+  def akt_element
+    @options[@akt_index]
+  end
+
+  def update_options(options, start_index = 0, method = nil)
+    @options = options
+    @output_options = ((method)? @options.map{|e| e.send(method)} : @options )
+    @akt_index = start_index
   end
 
   def update
@@ -193,9 +204,11 @@ class Slide_Menu
   end
 
   def draw
-    @window.draw_triangle(*@t1)
-    @window.draw_triangle(*@t2)
-    @font.draw(@options[@akt_index], @x+(@width-@font.text_width(@options[@akt_index]))/2, @y, @z)
+    if @options.size > 1
+      @window.draw_triangle(*@t1)
+      @window.draw_triangle(*@t2)
+    end
+    @font.draw(@output_options[@akt_index], @x+(@width-@font.text_width(@output_options[@akt_index]))/2, @y, @z)
   end
 end
 
