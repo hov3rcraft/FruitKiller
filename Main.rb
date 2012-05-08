@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 VERSION = "2.0 Build 3"
-DATE    = "2012-05-04"
+DATE    = "2012-05-08"
 
 require 'gosu'
 require 'yaml'

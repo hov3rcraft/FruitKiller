@@ -1,0 +1,7 @@
+OS X / Linux:
+You have to install Ruby and the gem Gosu to run this game. 
+For the Splitscreen-Mode you will need a Touchscreen.
+
+Windows:
+You can run the .exe-File instead of installing Ruby and Gosu.
+For the Splitscreen-Mode you will need a Touchscreen or the Freeware-Tool 'TeamPlayer'.

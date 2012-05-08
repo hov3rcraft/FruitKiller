@@ -60,7 +60,7 @@ end
 class SplitscreenGame < Game
   def initialize(window, elements)
     super
-    @background = Img.new(window, "background.png", 0, 0, ZOrder::Background2)
+    @background = Img.new(window, "background2.png", 0, 0, ZOrder::Background2)
     @fruits     = @new_fruits.map { |filename| Element.new(@window, filename, [0, WIDTH/2]) }
     @fruits2    = @new_fruits.map { |filename| Element.new(@window, filename, [WIDTH/2, WIDTH]) }
     @all_fruits = @fruits + @fruits2
@@ -100,9 +100,9 @@ class SplitscreenGame < Game
     @medium_font.draw(@fruits[@current].name, 20, 0, ZOrder::String, 1.0, 1.0, YELLOW)
     x = WIDTH - @medium_font.text_width(@fruits2[@current2].name) - 20
     @medium_font.draw(@fruits2[@current2].name, x, 0, ZOrder::String, 1.0, 1.0, YELLOW)
-    x = WIDTH/2 - @medium_font.text_width(10-@current) - 7
-    @medium_font.draw(10-@current, x, 0, ZOrder::String, 1.0, 1.0, YELLOW)
-    @medium_font.draw(10-@current2, WIDTH/2+7, 0, ZOrder::String, 1.0, 1.0, YELLOW)
+    x = WIDTH/2 - @medium_font.text_width(@new_fruits.size-@current) - 7
+    @medium_font.draw(@new_fruits.size-@current, x, 0, ZOrder::String, 1.0, 1.0, YELLOW)
+    @medium_font.draw(@new_fruits.size-@current2, WIDTH/2+7, 0, ZOrder::String, 1.0, 1.0, YELLOW)
     @small_font.draw("Q", WIDTH - @small_font.text_width("Q"), HEIGHT-30, ZOrder::String, 1.0, 1.0, YELLOW)
   end
 end

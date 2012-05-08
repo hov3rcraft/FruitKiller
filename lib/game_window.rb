@@ -9,7 +9,7 @@ class GameWindow < Gosu::Window
     @games            = Dir['*/'].map { |d| d.sub('/', '') }
     @no_profiles      = @profiles.empty?
 
-    @background_image = Image.new(self, File.join(MEDIA_PATH, "background2.png"), true)
+    @background_image = Image.new(self, File.join(MEDIA_PATH, "background.png"), true)
     @main_menu        = Image.new(self, File.join(MEDIA_PATH, "main_menu.png"), true)
     @ok_button1       = Img.new(self, File.join(MEDIA_PATH, "ok_button.png"), width/2-57, 270, ZOrder::Menu)
     @ok_button2       = Img.new(self, File.join(MEDIA_PATH, "ok_button.png"), 520, 100, ZOrder::InputBox)
@@ -326,7 +326,7 @@ class GameWindow < Gosu::Window
     range = (@winner == @p1)? [width/2, 0, width, width/2] : [width, width/2, width/2, 0]
     draw_centered(270, "WINNER", @big_font, GREEN, range[0], range[1])
     draw_centered(370, "#{@winner.name}", @big_font, WHITE, range[0], range[1])
-    draw_centered(300, "LOOSER", @font79, RED, range[2], range[3])
+    draw_centered(300, "LOSER", @font79, RED, range[2], range[3])
     draw_centered(370, "#{@looser.name}", @font79, WHITE, range[2], range[3])
     draw_won
   end
