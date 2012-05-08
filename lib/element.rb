@@ -1,12 +1,15 @@
 #encoding: utf-8
 class Element
   attr_accessor :x, :y, :name
-  def initialize(owner, filename)
+  def initialize(owner, filename, x_range = [0, owner.width])
     @owner    = owner
     @name     = File.basename(filename).sub(".png", "")
     @image    = Gosu::Image.new(@owner, filename)
-    @x        = rand(@owner.width - 64) + 32
+    @x        = rand(x_range[1] - x_range[0] - 64) + 32 + x_range[0]
     @y        = rand(@owner.height - 64) + 32
+    @width    = @image.width
+    @height   = @image.height
+    @x_range  = x_range
     @target_x = @x + rand(100) - 50
     @target_y = @y + rand(100) - 50
   end
@@ -39,9 +42,9 @@ class Element
   end
 
   def inside?(x,y)
-    x >= ELEMENT_WIDTH/2 &&
-      x <= WIDTH - ELEMENT_WIDTH/2 &&
-      y >= ELEMENT_WIDTH/2 &&
-      y <= HEIGHT - ELEMENT_WIDTH/2
+    x >= (@width/2 + @x_range[0])  &&
+      x <= (@x_range[1] - @width/2) &&
+      y >= @height/2 &&
+      y <= HEIGHT - @height/2
   end
 end

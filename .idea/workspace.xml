@@ -25,7 +25,48 @@
       <file leaf-file-name="Main.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/game.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="42" selection-start="2707" selection-end="2707" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_window.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/game_window.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="148" column="67" selection-start="6177" selection-end="6177" vertical-scroll-proportion="0.66306305">
+              <folding>
+                <element signature="e#1875#2552#0" expanded="false" />
+                <element signature="e#2693#3539#0" expanded="false" />
+                <element signature="e#4962#5111#0" expanded="false" />
+                <element signature="e#5368#5488#0" expanded="false" />
+                <element signature="e#6509#7720#0" expanded="false" />
+                <element signature="e#7724#8127#0" expanded="false" />
+                <element signature="e#8194#9211#0" expanded="false" />
+                <element signature="e#9500#10450#0" expanded="false" />
+                <element signature="e#12654#12878#0" expanded="false" />
+                <element signature="e#12882#12942#0" expanded="false" />
+                <element signature="e#13807#13843#0" expanded="false" />
+                <element signature="e#13849#13947#0" expanded="false" />
+                <element signature="e#14299#14671#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/element.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -34,7 +75,7 @@
       <file leaf-file-name="profile.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/profile.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+            <state line="9" column="20" selection-start="313" selection-end="329" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,39 +93,7 @@
       <file leaf-file-name="gosu_mod.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/gosu_mod.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="0" selection-start="5770" selection-end="5770" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1319#2095#0" expanded="false" />
-                <element signature="e#2097#2785#0" expanded="false" />
-                <element signature="e#2787#4021#0" expanded="false" />
-                <element signature="e#4023#4398#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_window.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/game_window.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="344" column="1" selection-start="12169" selection-end="12169" vertical-scroll-proportion="8.179021">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/game.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="element.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/element.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+            <state line="170" column="34" selection-start="4451" selection-end="4452" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,13 +112,13 @@
         <option value="$PROJECT_DIR$/profiles.yml" />
         <option value="$PROJECT_DIR$/gosu_mod.rb" />
         <option value="$PROJECT_DIR$/highscores.rb" />
-        <option value="$PROJECT_DIR$/lib/profile.rb" />
         <option value="$PROJECT_DIR$/lib/single_game.rb" />
         <option value="$PROJECT_DIR$/lib/highscores.rb" />
+        <option value="$PROJECT_DIR$/lib/gosu_mod.rb" />
+        <option value="$PROJECT_DIR$/Main.rb" />
         <option value="$PROJECT_DIR$/lib/element.rb" />
         <option value="$PROJECT_DIR$/lib/game.rb" />
-        <option value="$PROJECT_DIR$/Main.rb" />
-        <option value="$PROJECT_DIR$/lib/gosu_mod.rb" />
+        <option value="$PROJECT_DIR$/lib/profile.rb" />
         <option value="$PROJECT_DIR$/lib/game_window.rb" />
       </list>
     </option>
@@ -372,11 +381,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14224137" sideWeight="0.78243244" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13721265" sideWeight="0.7837838" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21756756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21621622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -453,47 +462,62 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/element.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/highscores.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/element.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/gosu_mod.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="0" selection-start="5770" selection-end="5770" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1319#2095#0" expanded="false" />
-            <element signature="e#2097#2785#0" expanded="false" />
-            <element signature="e#2787#4021#0" expanded="false" />
-            <element signature="e#4023#4398#0" expanded="false" />
-          </folding>
+        <state line="170" column="34" selection-start="4451" selection-end="4452" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="313" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" />
+        <state line="19" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="42" selection-start="2707" selection-end="2707" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/game_window.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="344" column="1" selection-start="12169" selection-end="12169" vertical-scroll-proportion="8.179021">
-          <folding />
+        <state line="148" column="67" selection-start="6177" selection-end="6177" vertical-scroll-proportion="0.66306305">
+          <folding>
+            <element signature="e#1875#2552#0" expanded="false" />
+            <element signature="e#2693#3539#0" expanded="false" />
+            <element signature="e#4962#5111#0" expanded="false" />
+            <element signature="e#5368#5488#0" expanded="false" />
+            <element signature="e#6509#7720#0" expanded="false" />
+            <element signature="e#7724#8127#0" expanded="false" />
+            <element signature="e#8194#9211#0" expanded="false" />
+            <element signature="e#9500#10450#0" expanded="false" />
+            <element signature="e#12654#12878#0" expanded="false" />
+            <element signature="e#12882#12942#0" expanded="false" />
+            <element signature="e#13807#13843#0" expanded="false" />
+            <element signature="e#13849#13947#0" expanded="false" />
+            <element signature="e#14299#14671#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

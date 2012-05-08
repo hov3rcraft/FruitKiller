@@ -1,0 +1,12 @@
+--- 
+- !ruby/object:Profile 
+  games_played: 5
+  high_scores: 
+    Fruits: 1676
+  last_played: 2012-05-08
+  last_score: 1428
+  name: Christian
+  score_sum: 7643
+  ss_games_lost: 0
+  ss_games_won: 6
+  vs_games_played: 6

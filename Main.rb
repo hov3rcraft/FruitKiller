@@ -1,7 +1,7 @@
 #!/Users/mk/.rvm/bin/ruby-1.9.2-p180@gosu
 # encoding: utf-8
 
-VERSION = "2.0 Build 2"
+VERSION = "2.0 Build 3"
 DATE    = "2012-05-04"
 
 require 'gosu'
@@ -16,7 +16,7 @@ include Gosu
 
 WIDTH            = 1280
 HEIGHT           = 800
-ELEMENT_WIDTH    = 64
+FULLSCREEN       = false
 
 WHITE            = 0xFFFFFFFF
 BLACK            = 0xFF000000
@@ -26,6 +26,7 @@ SOFT_GREEN       = 0XFF66FF66
 BLUE             = 0XFF00BFFF
 RED              = 0XFFFF0000
 ORANGE           = 0XFFFF7700
+SOFT_ORANGE      = 0XFFFFAA00
 GRAY             = 0X77444444
 
 PREFERENCES_PATH = File.dirname(__FILE__)
@@ -34,7 +35,7 @@ PROFILES_FILE    = File.join(PREFERENCES_PATH, 'profiles.yml')
 SCORES_FILE      = File.join(PREFERENCES_PATH, 'scores.yml')
 
 module ZOrder
-  Background, Menu, MenuString, InputBox, InputBoxString, Element, String = *0..6
+  Background, Background2, Menu, MenuString, InputBox, InputBoxString, Element, String = *0..7
 end
 
 class Fixnum
